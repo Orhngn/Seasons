@@ -1,0 +1,158 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+#season {
+  background-image: url(/season.jpg);
+  height: 100vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+#winter {
+  background-image: url(/winter.jpg);
+  height: 100vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  display: none;
+}
+#spring {
+  background-image: url(/spring1.jpg);
+  height: 100vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  display: none;
+}
+#summer {
+  background-image: url(/summer1.jpg);
+  height: 100vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  display: none;
+}
+#autumn {
+  background-image: url(/autumn.jpg);
+  height: 100vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  display: none;
+}
+.main-container {
+  width: 50%;
+  height: 240px;
+  background-color: transparent;
+  position: absolute;
+  top: 60px;
+  left: 25%;
+  display: grid;
+  grid-template-areas:
+    "header header header header"
+    "spring summer autumn winter";
+  gap: 2%;
+
+  text-align: center;
+  border: 2px solid transparent;
+  border-radius: 32px;
+  cursor: pointer;
+}
+.header {
+  grid-area: header;
+  background-color: rgba(250, 214, 165, 0.676);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid transparent;
+  border-radius: 32px;
+  margin-bottom: 12px;
+}
+.header:hover {
+  box-shadow: 0 0 25px rgba(250, 214, 165, 0.676),
+    0 0 50px rgba(250, 214, 165, 0.876), 0 0 100px rgba(250, 214, 165, 0.876);
+}
+.winter {
+  grid-area: winter;
+  background-color: rgba(199, 252, 246, 0.831);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid transparent;
+  border-radius: 32px;
+}
+.winter:hover {
+  box-shadow: 0 0 25px rgba(199, 252, 246, 0.831),
+    0 0 50px rgba(199, 252, 246, 0.831), 0 0 100px rgba(199, 252, 246, 0.831);
+}
+.spring {
+  grid-area: spring;
+  background-color: rgba(6, 251, 30, 0.619);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid transparent;
+  border-radius: 32px;
+}
+.spring:hover {
+  box-shadow: 0 0 25px rgba(6, 251, 30, 0.619), 0 0 50px rgba(6, 251, 30, 0.619),
+    0 0 100px rgba(6, 251, 30, 0.619);
+}
+.summer {
+  grid-area: summer;
+  background-color: rgba(255, 192, 3, 0.619);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid transparent;
+  border-radius: 32px;
+}
+.summer:hover {
+  box-shadow: 0 0 25px rgba(255, 192, 3, 0.619),
+    0 0 50px rgba(255, 192, 3, 0.619), 0 0 100px rgba(255, 192, 3, 0.619);
+}
+.autumn {
+  grid-area: autumn;
+  background-color: rgba(247, 150, 13, 0.614);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid transparent;
+  border-radius: 32px;
+}
+.autumn:hover {
+  box-shadow: 0 0 25px rgba(247, 150, 13, 0.614),
+    0 0 50px rgba(247, 150, 13, 0.614), 0 0 100px rgba(247, 150, 13, 0.614);
+}
+.tr {
+  display: none;
+}
+.lang {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  width: 120px;
+  text-align: center;
+  padding: 8px 8px;
+  font-size: 16px;
+  display: flex;
+  justify-content: space-around;
+  cursor: pointer;
+}
+.lang span {
+  border: 1px solid transparent;
+  width: 50%;
+  border-radius: 32px;
+  font-weight: bolder;
+}
+#ing {
+  background-color: blue;
+  color: white;
+}
