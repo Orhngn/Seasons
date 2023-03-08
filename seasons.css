@@ -3,6 +3,14 @@
   margin: 0;
   padding: 0;
 }
+.seasons-item{
+  height: 100vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  display: none;
+}
 #season {
   background-image: url(/season.jpg);
   height: 100vh;
@@ -13,39 +21,16 @@
 }
 #winter {
   background-image: url(/winter.jpg);
-  height: 100vh;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  position: relative;
-  display: none;
 }
 #spring {
   background-image: url(/spring1.jpg);
-  height: 100vh;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  position: relative;
-  display: none;
+
 }
 #summer {
   background-image: url(/summer1.jpg);
-  height: 100vh;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  position: relative;
-  display: none;
 }
 #autumn {
   background-image: url(/autumn.jpg);
-  height: 100vh;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  position: relative;
-  display: none;
 }
 .main-container {
   width: 50%;
@@ -79,14 +64,16 @@
   box-shadow: 0 0 25px rgba(250, 214, 165, 0.676),
     0 0 50px rgba(250, 214, 165, 0.876), 0 0 100px rgba(250, 214, 165, 0.876);
 }
-.winter {
-  grid-area: winter;
-  background-color: rgba(199, 252, 246, 0.831);
+.season{
   display: flex;
   justify-content: center;
   align-items: center;
   border: 2px solid transparent;
   border-radius: 32px;
+}
+.winter {
+  grid-area: winter;
+  background-color: rgba(199, 252, 246, 0.831);
 }
 .winter:hover {
   box-shadow: 0 0 25px rgba(199, 252, 246, 0.831),
@@ -95,11 +82,6 @@
 .spring {
   grid-area: spring;
   background-color: rgba(6, 251, 30, 0.619);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border: 2px solid transparent;
-  border-radius: 32px;
 }
 .spring:hover {
   box-shadow: 0 0 25px rgba(6, 251, 30, 0.619), 0 0 50px rgba(6, 251, 30, 0.619),
@@ -108,11 +90,6 @@
 .summer {
   grid-area: summer;
   background-color: rgba(255, 192, 3, 0.619);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border: 2px solid transparent;
-  border-radius: 32px;
 }
 .summer:hover {
   box-shadow: 0 0 25px rgba(255, 192, 3, 0.619),
@@ -121,11 +98,6 @@
 .autumn {
   grid-area: autumn;
   background-color: rgba(247, 150, 13, 0.614);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border: 2px solid transparent;
-  border-radius: 32px;
 }
 .autumn:hover {
   box-shadow: 0 0 25px rgba(247, 150, 13, 0.614),
