@@ -1,36 +1,29 @@
-function seasonOpen() {
-  document.getElementById("season").style.display = "block";
+function reset(){
+  document.getElementById("season").style.display = "none";
   document.getElementById("spring").style.display = "none";
   document.getElementById("summer").style.display = "none";
   document.getElementById("autumn").style.display = "none";
   document.getElementById("winter").style.display = "none";
+}
+
+function seasonOpen() {
+  reset()
+  document.getElementById("season").style.display = "block";
 }
 function springOpen() {
-  document.getElementById("season").style.display = "none";
+  reset()
   document.getElementById("spring").style.display = "block";
-  document.getElementById("summer").style.display = "none";
-  document.getElementById("autumn").style.display = "none";
-  document.getElementById("winter").style.display = "none";
 }
 function summerOpen() {
-  document.getElementById("season").style.display = "none";
-  document.getElementById("spring").style.display = "none";
+  reset()
   document.getElementById("summer").style.display = "block";
-  document.getElementById("autumn").style.display = "none";
-  document.getElementById("winter").style.display = "none";
 }
 function autumnOpen() {
-  document.getElementById("season").style.display = "none";
-  document.getElementById("spring").style.display = "none";
-  document.getElementById("summer").style.display = "none";
+  reset()
   document.getElementById("autumn").style.display = "block";
-  document.getElementById("winter").style.display = "none";
 }
 function winterOpen() {
-  document.getElementById("season").style.display = "none";
-  document.getElementById("spring").style.display = "none";
-  document.getElementById("summer").style.display = "none";
-  document.getElementById("autumn").style.display = "none";
+  reset()
   document.getElementById("winter").style.display = "block";
 }
 function cevirİng() {
